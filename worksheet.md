@@ -34,6 +34,21 @@ referred to as *fuzzing*).  Try breaking the `birthday_cli`
 program by giving it "bad" input and observe the consequences.
 Give at least two examples of potentially bad input and the
 results you observe.
+Answer for first input:
+
+        .\a.exe Ahmed 0919 12 7
+Today is 2023/10/07
+Your birthday was 0919/12/07
+Hello, Ahmed.  You are 0 years, 0 weeks, and 0 days old today. 
+
+Answer for second input:
+
+.\a.exe Dennis 2022 13 5
+Today is 2023/10/07
+Your birthday was 
+Hello, Dennis.  You are 0 years, 39 weeks, and 2 days old today.
+
+
 
 
 
@@ -45,18 +60,18 @@ results you observe.
   range: -128 to 127
 * `short int`
   size: 2 byte
-  range: 
+  range: -32768 to 32767
 * `int`
-  size:
-  range:
+  size: 4 bytes
+  range: -2147483648 to 2147483647
 * `long int`
-  size:
-  range:
+  size: 4 bytes
+  range: 0 to 4294967295
 * `float`
-  size:
+  size:  4 bytes
   range: 7 digits of accuracy
 * `double`
-  size:
+  size: 8 bytes
   range: 15 digits of accuracy
 
 
