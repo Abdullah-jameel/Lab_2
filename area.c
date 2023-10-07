@@ -7,10 +7,10 @@
  *  1/2 * base * height
  *
  */
-#include <stdlib.h>
+#include <stdlio.h>
 #include <stdio.h>
 
-int main(int argc, char **argv) {
+int main(int argc, char argv) {
 
   double area, base, height;
 
@@ -22,7 +22,7 @@ int main(int argc, char **argv) {
 
   scanf("%lf", &height);
 
-  area = 1/2 * base * height;
+  area =(1/2)f * base * height;
 
   printf("The area is %f square units.\n", area);
 
