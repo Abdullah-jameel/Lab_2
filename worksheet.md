@@ -3,7 +3,7 @@
 ## Lab 2.0 Worksheet
 
 Name(s) and Login(s):
-
+Abdullah Jameel     Abdullah-jameel
 
 
 1. Dennis Ritchie, the creator of the C programming language,
@@ -123,10 +123,51 @@ Answer:
 a) Run the `area` program with 3 and 4 as inputs.  
 What value do you get?  Is this result correct?
 
+Answer:
+
+i got '0.000000' as result. This result is not Correct. As 1 and 2 are integers in area formula so when 1 divides by 2 answer will come in integer 0 and whole result will also become as 0. By editing program bytype casting method if we either add .0 with 1 and 2 or write f with them we can get correct answer.
 
 b) Execute the program again with inputs 3 and 5.
 Does the program give correct results?  Why not?
 
+Answer:
+
+The program doesn't give Correct result. As 1 and 2 are integers in area formula so when 1 divides by 2 answer will come in integer 0 and whole result will also become as 0. By editing program bytype casting method if we either add .0 with 1 and 2 or write f with them we can get correct answer.
+
 
 c) Fix the program by editing the `area.c` source
 code so that the program produces correct results.
+
+Answer:
+
+/**
+ * Author: Abdullah Jameel
+ * 
+ * This program prompts the user to enter the
+ * base and the height of a triangle and computes
+ * its area using the well-known formula
+ *  1/2 * base * height
+ *
+ */
+
+#include<stdio.h>
+
+int main() {
+
+  double area, base, height;
+
+  printf("Please enter the base of a triangle: ");
+
+  scanf("%lf", &base);
+
+  printf("Please enter the height of a triangle: ");
+
+  scanf("%lf", &height);
+
+  area = 1.0/2.0 *base * height;
+
+  printf("The area is %f square units.\n", area);
+
+  return 0;
+}
+
