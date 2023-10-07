@@ -80,9 +80,29 @@ the exchange amounts for the following inputs:
 
   a) $250.25
 
+Answer:
+
+Please input the total amount of US Dollars:250.25
+Fee is 25.02
+88.96 GBP
+14375 JPY
   b) $1,000.52
 
+  Answer:
+
+  Please input the total amount of US Dollars:1000.52
+Fee is 100.05
+355.68 GBP
+57472 JPY
+
   c) $968,410.12
+
+  Answer:
+
+  Please input the total amount of US Dollars:968410.12
+Fee is 96841.02
+344269.81 GBP
+55627900 JPY
 
 
 
@@ -92,6 +112,9 @@ to use it to convert the US national debt
 (which as of 2020 was \$26,009,754,625,487)?
 Why or why not?
 
+Answer:
+
+ If we use only only 'int' data type the program will not give correct values of Fee, GBP and JPY because the value of US national debt which we will write in variable 'dollars' is too large that it is out of "int's" range which is "-2147483648 to 2147483647" as a result of this when we run the program compiler gives some trash values of Fee, GBP and JPY. 
 
 
 
